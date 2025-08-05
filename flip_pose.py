@@ -100,6 +100,6 @@ class FlipPoseInvocation(BaseInvocation, WithMetadata, WithBoard):
         remapped = flat.reshape(remapped.shape)
 
         # Save output
-        final = Image.fromarray(remapped, mode="RGB")
+        final = Image.fromarray(remapped)
         dto = context.images.save(image=final)
         return ImageOutput.build(dto)
