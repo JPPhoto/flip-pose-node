@@ -1,8 +1,6 @@
 # Copyright (c) 2025 Jonathan S. Pollack (https://github.com/JPPhoto)
 
 import numpy as np
-from PIL import Image
-
 from invokeai.invocation_api import (
     BaseInvocation,
     ImageField,
@@ -13,6 +11,7 @@ from invokeai.invocation_api import (
     WithMetadata,
     invocation,
 )
+from PIL import Image
 
 
 @invocation(
